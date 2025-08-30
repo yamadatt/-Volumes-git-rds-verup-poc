@@ -7,7 +7,7 @@ locals {
   }
   db = {
     engine            = "postgres"
-    version           = "12.19"
+    version           = "16.3"
     instance_class    = "db.t3.micro"
     allocated_storage = "20"
     storage_type      = "gp3"
@@ -19,10 +19,13 @@ locals {
   ars_ap = {
     server ={
       "01" ={
-        ip_address = "72.14.201.171/32"
+        ip_address = "72.14.201.177/32"
         }
       "02"={
-        ip_address =  "192.168.1.0/24"
+        ip_address =  "133.203.185.64/32"
+        }
+      "03"={
+        ip_address =  "10.1.0.0/16"
         }
     }
   }
